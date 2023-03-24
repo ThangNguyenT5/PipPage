@@ -15,6 +15,7 @@ let openMenu = function () {
         if (event.target != menuBox && event.target != btn) {
             menuBox.style.visibility= 'hidden';
             menuBox.style.left = '-100%';
+            menuBox.style.width = '100%';
         }
     }
 }

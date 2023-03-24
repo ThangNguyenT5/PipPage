@@ -570,9 +570,6 @@ opacity: 0.8;
     'a e f g';
     list-style: none;
     grid-auto-columns: minmax(100px, 1fr);
-    /* width: 100%;
-    max-width: 1216px;
-    margin: 0 auto; */
 }
 
 .clientItem1 {
@@ -711,7 +708,7 @@ footer .container {
 }
 
 .touch {
-    width: calc(100vw - ((100vw - 1216px)/2));
+    max-width: calc(100vw - ((100vw - 1216px)/2));
     margin-left: auto;
     background-color: #000000;
 
@@ -748,7 +745,6 @@ footer .container {
 
 .contentTouch {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-left: 95px;
 }
@@ -823,7 +819,12 @@ footer .container {
 }
 
 .map {
-    padding: 50px 100px ;
+    width: 100%;
+    padding: 0 10px ;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
 }
 
 

@@ -1,4 +1,14 @@
-/* PC > PC low resolution < 1024px & < 1239px */
+@media (max-width: 1084px) {
+    .touchContentRight {
+        margin-left: 0;
+    }
+    /* .contentTouch {
+        margin-left: 30px;
+    } */
+    .contactWrap {
+        margin-left: 30px;
+    }
+}/* PC > PC low resolution < 1024px & < 1239px */
 @media (min-width: 1024px) and (max-width: 1440px) {
     .hidden-l {
         display: none;
@@ -143,7 +153,6 @@
     .touchContent .contentHeading {
         font-size: 3.6rem;
         line-height: 40px;
-        margin-left: 30px;
     }
     .touchContent .contentHeading strong {
         font-size: 7.2rem;
@@ -151,7 +160,7 @@
     }
 
     .contentTouch {
-        margin-left: 97px;
+        /* margin-left: 97px; */
         flex-direction: column;
         align-items: start;
         padding-left: 0;
@@ -187,7 +196,7 @@
     }
     
     .contactWrap {
-
+        margin-left: 30px;
     }
 
 }
@@ -268,18 +277,20 @@
     .projectItem {
         height: 540px;
     }
+
+    .projectItem p {
+        font-size: 3rem;
+    }
+
     .itemTitle_2 {
-        bottom: 22%;
-        right: -100px;
+        bottom: 18%;
+        right: -70px;
     }
     .itemTitle_3,
     .itemTitle_4 {
-        bottom: 11%;
+        bottom: 9%;
         right: -34px;
     }
-    /* .projectItem img {
-        min-height: 70%;
-    } */
 
     .client {
         margin-top: 60px;
@@ -312,7 +323,6 @@
     }
     .touchContentRight {
         flex: 1;
-        margin-left: 50px;
     }
 
     .touchContent .contentHeading {
@@ -326,11 +336,9 @@
     }
 
     .contentTouch {
-        margin-left: 97px;
         flex-direction: column;
-        align-items: start;
         padding-left: 0;
-
+        margin-left: 40px;
     }
 
     .map {
@@ -345,11 +353,39 @@
     }
 }
 
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
-
+@media (max-width: 900px) {
+    .touchContent {
+        display: block;
+    }
+    .touchContentLeft {
+        position: relative;
+        padding: 56.25%;
+    }
+    .touchContentLeft img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    .contentTouch {
+        flex-direction: row;
+        margin-left: 0;
+        padding-bottom: 60px;
+    }
+    .contactWrap {
+        margin-left: 50px;
+    }
+    .map {
+        width: 100%;
+        padding: 0 10px ;
+    }
+    .map iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
-
 /* Mobile */
 @media (max-width: 739px) {
     html {
@@ -368,6 +404,9 @@
         width: 40%;
         height: 40%;
     }
+    .contentLeft{
+        max-width: 600px;
+    }
 
     .boxMenu {
         position: relative;
@@ -380,16 +419,34 @@
         border-bottom: 25px solid transparent;
     }
     .boxMenu::after {
-        display: none;
+        width: 59px;
+        left: -28px;
     }
     .boxMenu::before {
-        display: none;
+        width: 60px;
+        left: -30px;
     }
-
+    .item .searchIcon{
+        width: 12px;
+        top: -7px;
+        left: -24px;
+    }
+    
     .item .menuIcon {
         width: 12px;
         top: -5px;
         left: 10px;
+    }
+
+    .item .shareIcon {
+        width: 12px;
+        top: 12px;
+        left: -4px;
+    }
+
+    .item .langIcon {
+        width: 12px;
+        top: -24px;
     }
 
     .contentHomeCenter {
@@ -434,7 +491,7 @@
         margin-left: 50px;
     }
     .aboutDesc {
-        max-width: 250px;
+        width: 100%;
         margin-left: 50px;
     }
 
@@ -449,6 +506,23 @@
         margin-top: 10%;
     }
 
+    .projectItem {
+        height: 540px;
+    }
+    .projectItem p {
+        font-size: 3rem;
+    }
+
+    .itemTitle_2 {
+        bottom: 12%;
+        right: -52px;
+    }
+    .itemTitle_3,
+    .itemTitle_4 {
+        bottom: 6%;
+        right: -24px;
+    }
+
     .weDoContent {
         flex-direction: column;
         padding: 40px 0;
@@ -458,7 +532,11 @@
     }
 
     .clientWrapper {
-        display: block;
+        grid-template-areas:
+        'a a'
+        'b c'
+        'd e'
+        'f g';
     }
 
     .clientItem2,
@@ -491,11 +569,16 @@
         margin-left: 0px;
     }
     
+    .touchContent .contentHeading {
+        margin-left: 10px;
+    }
+
     .contentTouch {
+        /* flex-direction: column; */
         margin-left: 0;
     }
     .contactWrap {
-        margin-left: 97px;
+        margin-left: 50px;
     }
 
     .map {
@@ -516,14 +599,46 @@
 
 
 
-/* @media (max-width: 1850px) {
-    .aboutHeading::before {
-        left: -20.5%;
+
+
+
+
+@media (max-width: 676px) {
+    .aboutDesc {
+        max-width: 500px;
+    }
+    .contentLeft{
+        width: 570px;
     }
 }
 
-@media (max-width: 1690px) {
-    .aboutHeading::before {
-        left: -26%;
+@media (max-width: 570px) {
+    .aboutDesc {
+        max-width: 350px;
     }
-} */
+    .contentLeft{
+        width: 570px;
+    }
+}
+
+@media (max-width: 444px) {
+    .aboutDesc {
+        max-width: 300px;
+    }
+    .contentLeft{
+        width: 570px;
+    }
+    .menuItem {
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .aboutDesc {
+        max-width: 200px;
+    }
+    .contentLeft{
+        width: 570px;
+    }
+}
