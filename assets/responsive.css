@@ -51,11 +51,6 @@
         padding: 0 0 17px 23px;
         margin-right: 0;
     }
-
-    .contentAbout {
-
-    }
-
     .contentLeft {
         /* margin-left: 352px; */
         margin-right: 28px;
@@ -96,10 +91,6 @@
         font-size: 5rem;
     }
 
-    .weDoContent .contentHeading {
-
-    }
-
     .weDoContent .contentHeadingtab {
         display: block;
         color: #fff;
@@ -132,16 +123,6 @@
     .aboutMore.project {
         margin-left: 40px;
     }
-
-    .clientItem2 img,
-    .clientItem3 img,
-    .clientItem4 img,
-    .clientItem5 img,
-    .clientItem6 img,
-    .clientItem7 img {
-        /* padding: 10px; */
-    }
-
     .touchContentLeft {
         margin: 0;
     }
@@ -185,10 +166,6 @@
         'a a a'
         'b c d'
         'e f g';
-    }
-
-    .clientHeading h3 {
-
     }
 
     .clientItem1 {
@@ -302,10 +279,6 @@
         'e f g';
     }
 
-    .clientHeading h3 {
-
-    }
-    
     .aboutMore.project {
         margin-left: 40px;
     }
@@ -334,7 +307,6 @@
         font-size: 7.2rem;
         line-height: 95px;
     }
-
     .contentTouch {
         flex-direction: column;
         padding-left: 0;
@@ -374,6 +346,15 @@
         margin-left: 0;
         padding-bottom: 60px;
     }
+    .touchContent .contentHeading {
+        font-size: 5.6rem;
+        line-height: 6.8rem;
+    }
+
+    .touchContent .contentHeading strong {
+        font-size: 16rem;
+        line-height: 19.5rem;
+    }
     .contactWrap {
         margin-left: 50px;
     }
@@ -389,7 +370,7 @@
 /* Mobile */
 @media (max-width: 739px) {
     html {
-        font-size: 42.5%;
+        font-size: 62.5%;
     }
 
     .hidden-mobile {
@@ -446,7 +427,9 @@
 
     .item .langIcon {
         width: 12px;
+        font-size: 8px;
         top: -24px;
+        left: -4px;
     }
 
     .contentHomeCenter {
@@ -513,7 +496,7 @@
         font-size: 3rem;
     }
 
-    .itemTitle_2 {
+    /* .itemTitle_2 {
         bottom: 12%;
         right: -52px;
     }
@@ -521,7 +504,7 @@
     .itemTitle_4 {
         bottom: 6%;
         right: -24px;
-    }
+    } */
 
     .weDoContent {
         flex-direction: column;
@@ -610,6 +593,10 @@
     .contentLeft{
         width: 570px;
     }
+    .projectHeading {
+        top: 0;
+        left: 0;
+    }
 }
 
 @media (max-width: 570px) {
@@ -618,6 +605,25 @@
     }
     .contentLeft{
         width: 570px;
+    }
+
+    .touchContent .contentHeading {
+        font-size: 5.6rem;
+        line-height: 6.8rem;
+    }
+
+    .touchContent .contentHeading strong {
+        font-size: 16rem;
+        line-height: 19.5rem;
+    }
+
+    .contentTouch {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .contactWrap {
+        max-width: 100%;
     }
 }
 
@@ -631,6 +637,14 @@
     .menuItem {
         font-size: 2.2rem;
         line-height: 2.9rem;
+    }
+    .projectHeading {
+        top: 0;
+        left: 0;
+        font-size: 3.6rem;
+    }
+    .projectHeading h3 {
+        font-size: 3.6rem;
     }
 }
 
