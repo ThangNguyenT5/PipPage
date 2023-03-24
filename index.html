@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./index.js"></script>
+   
 </head>
 <body>
     <div class="main">
@@ -24,17 +24,17 @@
                     </a>
                 </div>
                 <div class="boxMenu">
-                    <div class="item">
+                    <div class="item hidden-mobile">
                         <img onclick="openSearch()" class="searchIcon" src="./assets/images/icon/searchIcon.png" alt="">
                     </div>
                     <input type="text" placeholder="Search..." class="searchBox">
                     <div class="item">
                         <img onclick="openMenu()" class="menuIcon" src="./assets/images/icon/menuIcon.png" alt="">
                     </div>
-                    <div class="item">
+                    <div class="item hidden-mobile">
                         <p class="langIcon">EN</p>
                     </div>
-                    <div class="item">
+                    <div class="item hidden-mobile">
                         <img onclick="openShare()" class="shareIcon" src="./assets/images/icon/shareIcon.png" alt="">
                     </div>
                     <ul class="shareSocial">
@@ -95,65 +95,71 @@
                 </ul>
             </div>
             <!-- Container -->
-            <div class="container">
                 <div id="home" class="homeBackground">
                     <div data-aos="fade-up" class="home">
-                        <div class="contentHome">
+                        <div class="contentHome active hidden-mobile">
                             <p class="contentNumber">01.</p>
                             <p class="contentHeading">D1 Mension</p>
                         </div>
                         <div class="contentHomeCenter">
                             <p class="contentNumber bold">02.</p>
                             <p class="contentdesc">Design & Build</p>
-                            <p class="contentHeading">Nguyen Dinh Chinh Hotel</p>
+                            <p class="contentHeading underline">Nguyen Dinh Chinh Hotel</p>
                         </div>  
-                        <div class="contentHome">
+                        <div class="contentHome hidden-m">
                             <p class="contentNumber">03.</p>
                             <p class="contentHeading">Primier Sky</p>
                         </div>
-                        <div class="contentHome">
+                        <div class="contentHome hidden-m">
                             <p class="contentNumber">04.</p>
                             <p class="contentHeading">Sunrise Riverside</p>
                         </div>   
                     </div>
                 </div>
                 
-                <div id="about" class="about">
-                    <div class="contentAbout">
-                        <div data-aos="fade-right" class="contentLeft">
-                            <h1 class="aboutHeading"> &nbsp;  bout <br>
-                                P.I.P ID CORP
-                            </h1>
-                            <p class="aboutDesc">
-                                With experienced, skillful and enthusiastic staff, we transform every smallest corner of the drawing to reality in the most truely and obvious way. According to the working process, the specific characteristics of customers are highlighted and incorporated in the details. For us, every project is a mission to create a more beautifully and convenient living space…
-                            </p>
-                            <a href="#" class="aboutMore">
-                                <i class="fa-regular fa-plus addIcon"></i>
-                                Read more
-                            </a>
+                <div class="conta">
+                    <div id="about" class="about">
+                        <div class="contentAbout">
+                            <div data-aos="fade-right" class="contentLeft">
+                                <h1 class="aboutHeading hidden-l hidden-m"> &nbsp;  bout <br>
+                                    P.I.P&nbsp;ID&nbsp;CORP
+                                </h1>
+                                <p class="aboutHeadingtab"><strong>A</strong>&nbsp;bout <br> <span>P.I.P&nbsp;ID&nbsp;CORP</span></p>
+                                <p class="aboutDesc">
+                                    With experienced, skillful and enthusiastic staff, we transform every smallest corner of the drawing to reality in the most truely and obvious way. According to the working process, the specific characteristics of customers are highlighted and incorporated in the details. For us, every project is a mission to create a more beautifully and convenient living space…
+                                </p>
+                                <a href="#" class="aboutMore about">
+                                    <i class="fa-regular fa-plus addIcon"></i>
+                                    Read more
+                                </a>
+                            </div>
+                            <div data-aos="fade-left" class="contentRight hidden-mobile">
+                                <img src="./assets/images/Rectangle 4.png" alt="">
+                                <div class="btnChevron">
+                                    <a data-aos="fade-right" href="" class="btnChevronLeft">
+                                        <i class="fa-solid fa-chevron-left chevronLeftIcon"></i>
+                                    </a>
+                                    <a data-aos="fade-left" href="" class="btnChevronRight">
+                                        <i class="fa-solid fa-chevron-right chevronRightIcon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="aboutImg">
+                                <img src="./assets/images/Rectangle 4.png" alt="">
+                            </div>
                         </div>
-                        <div data-aos="fade-left" class="contentRight">
-                            <img src="./assets/images/Rectangle 4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="btnChevron">
-                        <a data-aos="fade-right" href="" class="btnChevronLeft">
-                            <i class="fa-solid fa-chevron-left chevronLeftIcon"></i>
-                        </a>
-                        <a data-aos="fade-left" href="" class="btnChevronRight">
-                            <i class="fa-solid fa-chevron-right chevronRightIcon"></i>
-                        </a>
                     </div>
                 </div>
                 <div id="prestige" class="prestige">
                     <img data-aos="fade-right" class="prestigeImg" src="./assets/images/Layer 2 2.png" alt="">
                     <h2 class="prestigeHeading">
-                        <span style="color: #E84545">P</span>restige <span style="color: #E84545">i</span>s <span style="color: #E84545">P</span>ower
+                        <span style="color: #E84545">P</span>restige&nbsp;<span style="color: #E84545">i</span>s&nbsp;<span style="color: #E84545">P</span>ower
                     </h2>
                 </div>
                 <div id="weDo" class="weDo">
                     <div class="weDoContent">
-                        <h2 data-aos="fade-right" class="contentHeading">&nbsp;&nbsp; hat <br> we&nbsp;do</h2>
+                        <h2 data-aos="fade-right" class="contentHeading hidden-l hidden-m">&nbsp;&nbsp; hat <br> we&nbsp;do</h2>
+                        <p class="contentHeadingtab"><strong>W</strong>hat<br><span>we&nbsp;do</span></p>
                         <div data-aos="flip-right" class="contentService">
                             <div class="serviceIcon">
                                 <i class="fa-solid fa-hammer iconHammer"></i>
@@ -209,7 +215,7 @@
                                 <p><strong>O</strong>ur</p>
                                 <h3>Clients</h3>
                             </div>
-                            <a href="#" class="aboutMore">
+                            <a href="#" class="aboutMore project">
                                 <i class="fa-regular fa-plus addIcon"></i>
                                 Read more
                             </a>
@@ -235,7 +241,6 @@
                     </div>
 
                 </div>
-            </div>   
         </div>
         <footer>
             <div id="touch"  data-aos="fade-left" class="touch">
@@ -284,8 +289,8 @@
                                     FIND US ON MAPS <i class="fa-solid fa-chevron-right"></i>
                                 </a>
                             </div>
-                            <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.265429285752!2d106.6539358152411!3d10.790971361874764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec9c9b7e9cd%3A0x6f4a03550865d9ac!2sThe%20Mona%20Building!5e0!3m2!1svi!2s!4v1679395024034!5m2!1svi!2s" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="map ">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.265429285752!2d106.6539358152411!3d10.790971361874764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec9c9b7e9cd%3A0x6f4a03550865d9ac!2sThe%20Mona%20Building!5e0!3m2!1svi!2s!4v1679395024034!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -296,7 +301,7 @@
                 <div class="license">
                     <p class="licenseTitle">Designed and developed by Mona Media</p>
                 </div>
-                <div class="social">
+                <div class="social hidden-mobile">
                     <p class="socialTitle">Follow us</p>
                     <ul class="socials">
                         <li class="socialItem">
@@ -329,8 +334,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
 </body>
-<script>
-    AOS.init();
-  </script>
 </html>

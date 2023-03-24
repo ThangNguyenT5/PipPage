@@ -1,3 +1,6 @@
+AOS.init({
+    once: true,
+});
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
