@@ -496,16 +496,6 @@
         font-size: 3rem;
     }
 
-    /* .itemTitle_2 {
-        bottom: 12%;
-        right: -52px;
-    }
-    .itemTitle_3,
-    .itemTitle_4 {
-        bottom: 6%;
-        right: -24px;
-    } */
-
     .weDoContent {
         flex-direction: column;
         padding: 40px 0;
@@ -578,6 +568,10 @@
     .menuNav li {
         margin-bottom: 20px;
     }
+    .menuItem {
+        font-size: 1.8rem;
+        list-style: 2.9rem;
+    }
 }
 
 
@@ -608,13 +602,13 @@
     }
 
     .touchContent .contentHeading {
-        font-size: 5.6rem;
-        line-height: 6.8rem;
+        font-size: 3.6rem;
+        line-height: 4.8rem;
     }
 
     .touchContent .contentHeading strong {
-        font-size: 16rem;
-        line-height: 19.5rem;
+        font-size: 12rem;
+        line-height: 12.5rem;
     }
 
     .contentTouch {
@@ -624,6 +618,7 @@
 
     .contactWrap {
         max-width: 100%;
+        margin-right: 20px;
     }
 }
 
@@ -638,6 +633,18 @@
         font-size: 2.2rem;
         line-height: 2.9rem;
     }
+
+    .touchContent .contentHeading {
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+    }
+
+    .touchContent .contentHeading strong {
+        font-size: 12rem;
+        line-height: 12.5rem;
+    }
+
+
     .projectHeading {
         top: 0;
         left: 0;
@@ -648,11 +655,24 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
+    html {
+        font-size: 42.5%;
+    }
     .aboutDesc {
         max-width: 200px;
     }
     .contentLeft{
         width: 570px;
+    }
+
+    .itemTitle_2 {
+        bottom: 13%;
+        right: -50px;
+    }
+    .itemTitle_3,
+    .itemTitle_4 {
+        bottom: 7%;
+        right: -20px;
     }
 }
